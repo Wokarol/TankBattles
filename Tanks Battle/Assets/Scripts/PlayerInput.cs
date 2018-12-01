@@ -8,6 +8,7 @@ namespace Wokarol.MovementSystem
     {
         private void Update() {
             Horizontal = Input.GetAxisRaw("Horizontal");
+            Aim = Input.GetAxisRaw("Vertical");
             Shoot = Input.GetKey(KeyCode.Space);
         }
     } 
