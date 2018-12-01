@@ -7,21 +7,27 @@ namespace Wokarol.MovementSystem
     [RequireComponent(typeof(Rigidbody2D))]
     public class TankMovement : MonoBehaviour
     {
-        new Rigidbody2D rigidbody;
-
         [SerializeField] InputData input = null;
-        [SerializeField] float force = 100;
+        [SerializeField] float speed = 100;
+        [SerializeField] float accDccSpeed = 100;
+        [SerializeField] HingeJoint2D[] wheels = new HingeJoint2D[0];
+        private float currectSpeed = 0;
 
         private void OnValidate() {
             if (!input) input = GetComponent<InputData>();
         }
-        private void Awake() {
-            rigidbody = GetComponent<Rigidbody2D>();
+
+        private void Update() {
+            currectSpeed = Mathf.MoveTowards(currectSpeed, input.Horizontal * speed, accDccSpeed);
+            ApplySpeed(currectSpeed);
         }
 
-        private void FixedUpdate() {
-            rigidbody.AddForce(Vector2.right * (force * input.Horizontal));
+        private void ApplySpeed(float speed) {
+            for (int i = 0; i < wheels.Length; i++) {
+                var motor = wheels[i].motor;
+                motor.motorSpeed = speed;
+                wheels[i].motor = motor;
+            }
         }
     }
-
 }
