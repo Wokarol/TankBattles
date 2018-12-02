@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 1169714568}
-  m_PathPosition: 0.4802083
+  m_PathPosition: 0.4973958
   m_PositionUnits: 2
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -387,12 +387,12 @@ PrefabInstance:
     - target: {fileID: 1260686521923438092, guid: 7ae1888682680dd45a6afdf1638c9433,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.87
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 1260686521923438092, guid: 7ae1888682680dd45a6afdf1638c9433,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.56
+      value: 15.36
       objectReference: {fileID: 0}
     - target: {fileID: 1260686521923438092, guid: 7ae1888682680dd45a6afdf1638c9433,
         type: 3}
@@ -444,6 +444,11 @@ PrefabInstance:
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 647317670}
+    - target: {fileID: 3076383145722512794, guid: 7ae1888682680dd45a6afdf1638c9433,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ae1888682680dd45a6afdf1638c9433, type: 3}
 --- !u!1 &519420028
@@ -506,9 +511,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.23155215
+    y: 0.14891848
     width: 1
-    height: 0.5368957
+    height: 0.70216304
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -537,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.50008, y: 0, z: -10}
+  m_LocalPosition: {x: -1.2500687, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 263717385}
@@ -742,7 +747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561402323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.50008, y: 0, z: -10}
+  m_LocalPosition: {x: -1.2500687, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 184094312}
@@ -1219,7 +1224,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 1165602048}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677559431
 GameObject:
