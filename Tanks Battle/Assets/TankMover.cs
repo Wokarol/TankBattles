@@ -7,7 +7,8 @@ namespace Wokarol.MovementSystem
     [RequireComponent(typeof(TankController2D))]
     public class TankMover : MonoBehaviour
     {
-        [SerializeField] InputData input;
+        [SerializeField] float speed = 10;
+        [SerializeField] InputData input = null;
 
         // Caching
         TankController2D tankController;
@@ -22,7 +23,7 @@ namespace Wokarol.MovementSystem
         }
 
         private void Update() {
-            tankController.Move(input.Horizontal * Time.deltaTime);
+            tankController.Move(input.Horizontal * speed * Time.deltaTime);
         }
     } 
 }

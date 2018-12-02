@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753602506311810772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1260686522430581401}
@@ -111,7 +111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260686521923438089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.74, y: 6.404, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 7766624160986904304}
@@ -205,13 +205,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f4fdc747c1dd842888dbb72a03c045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseDistance: 1.5
-  maxDistance: 2
-  helpRayCount: 4
-  helpRaySpacing: 0.4
-  groundmask:
+  groundMask:
     serializedVersion: 2
     m_Bits: 256
+  maxDistance: 1
 --- !u!50 &4781603275829995686
 Rigidbody2D:
   serializedVersion: 4
@@ -245,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3977b28a461ac9841b743e82015aad72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
   input: {fileID: 8114744881167723910}
 --- !u!1 &1260686522430581400
 GameObject:
@@ -381,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6906425215020847899}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1260686521923438092}
@@ -454,7 +452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7615733495085971246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1260686521923438092}
