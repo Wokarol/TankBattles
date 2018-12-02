@@ -32,7 +32,6 @@ namespace Wokarol
             rigidbody = GetComponent<Rigidbody2D>();
         }
         private void Update() {
-            Debug.Log($"Rigidbody rotation = {rigidbody.rotation} and it's {(normalAngles.IsOutside(rigidbody.rotation)?"outside":"inside")}");
             if (normalAngles.IsOutside(rigidbody.rotation)){
                 upsideDownTimer += Time.deltaTime;
             } else {
@@ -41,7 +40,7 @@ namespace Wokarol
 
 
             if (Input.GetKeyDown(KeyCode.F4)) {
-                rigidbody.AddForce(Vector2.up * force);
+                rigidbody.AddForce(Vector2.up * force, ForceMode2D.Impulse);
                 Active = true;
             }
             if (Active) {

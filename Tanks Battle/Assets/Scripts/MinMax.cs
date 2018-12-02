@@ -21,11 +21,11 @@ namespace Wokarol
         }
 
         public bool IsInside(float value) {
-            return value < max && value > max;
+            return value <= max && value >= min;
         }
 
         public bool IsOutside(float value) {
-            return value > max || value < max;
+            return value >= max || value <= min;
         }
     }
 }
