@@ -18,6 +18,6 @@ public class CentreOfMassEditor : MonoBehaviour
     private void OnDrawGizmos() {
         if(!rigidbody) rigidbody = GetComponent<Rigidbody2D>();
 
-        Gizmos.DrawWireSphere(transform.position + (Vector3)rigidbody.centerOfMass, 0.2f);
+        Gizmos.DrawWireSphere(rigidbody.worldCenterOfMass, 0.3f);
     }
 }

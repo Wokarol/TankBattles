@@ -146,7 +146,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 5
@@ -180,8 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 8114744881167723910}
-  speed: 1000
-  accDccSpeed: 600
+  speed: 800
   wheels:
   - {fileID: 3073607613694684623}
   - {fileID: 4701908744567249669}
@@ -573,11 +572,11 @@ PrefabInstance:
       objectReference: {fileID: 2471333593305525220}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.000000070314854
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.16800031
+      value: -0.16800003
       objectReference: {fileID: 0}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_Motor.m_MaximumMotorForce
@@ -670,15 +669,11 @@ PrefabInstance:
       objectReference: {fileID: 2471333593305525220}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.34399995
+      value: -0.344
       objectReference: {fileID: 0}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.16800027
-      objectReference: {fileID: 0}
-    - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
-      propertyPath: m_Motor.m_MaximumMotorForce
-      value: 40
+      value: -0.16800003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90443dd0550d4a445b3644189349916e, type: 3}
@@ -771,7 +766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.16800033
+      value: -0.16800003
       objectReference: {fileID: 0}
     - target: {fileID: 1646618728, guid: 90443dd0550d4a445b3644189349916e, type: 3}
       propertyPath: m_Motor.m_MaximumMotorForce

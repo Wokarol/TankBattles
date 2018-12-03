@@ -9,17 +9,18 @@ namespace Wokarol.MovementSystem
     {
         [SerializeField] InputData input = null;
         [SerializeField] float speed = 100;
-        [SerializeField] float accDccSpeed = 100;
+        //[SerializeField] float accDccSpeed = 100;
         [SerializeField] HingeJoint2D[] wheels = new HingeJoint2D[0];
-        private float currectSpeed = 0;
+        //private float currectSpeed = 0;
 
         private void OnValidate() {
             if (!input) input = GetComponent<InputData>();
         }
 
         private void Update() {
-            currectSpeed = Mathf.MoveTowards(currectSpeed, input.Horizontal * speed, accDccSpeed);
-            ApplySpeed(currectSpeed);
+            //currectSpeed = Mathf.MoveTowards(currectSpeed, input.Horizontal * speed, accDccSpeed);
+            //ApplySpeed(currectSpeed);
+            ApplySpeed(input.Horizontal * speed);
         }
 
         private void ApplySpeed(float speed) {
